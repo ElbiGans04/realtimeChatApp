@@ -1,0 +1,31 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Elbi Chat App
+  link(rel='stylesheet' href='/assets/css/reset.css')
+  link(rel='stylesheet' href='/assets/css/index.css')
+.container
+  nav
+    .logo
+      h3 Elbi Chat App 
+    ul
+      li
+        a(href='javascript:void(0)')#information
+    .menu-toggle
+      input(type='checkbox')
+      span
+      span
+      span
+  main
+    ul 
+      li#userOnline Pengguna Aktif : 
+  section.inputField
+    select#to
+      option(value="all") all
+    input#inputText(type='text' autocomplete='off')
+    button#buttonSend Send
+script(src="/socket.io/socket.io.js") 
+script(src='/assets/js/index.js')
+noscript please enable javascript
