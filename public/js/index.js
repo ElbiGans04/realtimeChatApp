@@ -34,9 +34,8 @@ input.addEventListener('blur', function(event){
 // // // Event Socket Io
 
 // Event Saat Terhubung
+let name;
 socket.on('connect', function(){
-    let name;
-    
     do {
         name = prompt('Please Insert Your Name!');
     } while (!name || name.length <= 0)
